@@ -1371,6 +1371,10 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Lato, Roboto, 'PingFang SC', 'Microsoft YaHei', sans-serif;
   line-height: 2;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 *::-webkit-scrollbar {
   width: 8px;
@@ -1524,6 +1528,66 @@ blockquote footer cite:before {
 }
 blockquote > :last-child {
   margin-bottom: 0 !important;
+}
+.heimu,
+.heimu a,
+a .heimu,
+.heimu a.new,
+.heimu code {
+  background-color: #252525 !important;
+  color: #252525 !important;
+  text-shadow: none;
+}
+.heimu:hover,
+.heimu:active,
+.heimu:hover .heimu,
+.heimu:active .heimu,
+.heimu code:hover {
+  color: #fff !important;
+}
+.heimu:hover a,
+a:hover .heimu,
+.heimu:active a,
+a:active .heimu {
+  color: #add8e6 !important;
+}
+.heimu:hover .new,
+.heimu .new:hover,
+.new:hover .heimu,
+.heimu:active .new,
+.heimu .new:active,
+.new:active .heimu {
+  color: #ba0000 !important;
+}
+.heimur,
+.heimur a,
+a .heimur,
+.heimur a.new,
+.heimur code {
+  background-color: #252525 !important;
+  color: #252525 !important;
+  text-shadow: none;
+}
+.heimur:hover,
+.heimur:active,
+.heimur:hover .heimur,
+.heimur:active .heimur,
+.heimur code:hover {
+  color: #f00 !important;
+}
+.heimur:hover a,
+a:hover .heimur,
+.heimur:active a,
+a:active .heimur {
+  color: #add8e6 !important;
+}
+.heimur:hover .new,
+.heimur .new:hover,
+.new:hover .heimur,
+.heimur:active .new,
+.heimur .new:active,
+.new:active .heimur {
+  color: #ba0000 !important;
 }
 :root {
   --hl-color: #90a4ae;
@@ -2108,6 +2172,16 @@ figure.highlight pre .javascript .function {
     width: 100% !important;
   }
 }
+@media screen and (min-width: 900px) {
+  .layout > div:first-child {
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    -o-box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    -webkit-order: 2;
+    order: 2;
+  }
+}
 .layout.hide-aside {
   max-width: 1000px;
 }
@@ -2426,7 +2500,7 @@ h1.page-title + .tag-cloud-list {
 }
 @media screen and (min-width: 900px) {
   #aside-content {
-    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 @media screen and (max-width: 900px) {

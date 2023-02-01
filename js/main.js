@@ -763,8 +763,16 @@ document.addEventListener('DOMContentLoaded', function () {
       $this.style.display = 'inline'
     })
   }
+  /*
+  //你知道的太多了
+  const addheimuTitle = function(){
+    console.log('you should go "Tothetruth"')
+    $('.heimu').attr('title','你知道的太多了')
+  }
+  */
 
   const unRefreshFn = function () {
+    //addheimuTitle()
     window.addEventListener('resize', () => {
       adjustMenu(false)
       btf.isHidden(document.getElementById('toggle-menu')) && mobileSidebarOpen && sidebarFn.close()
@@ -779,7 +787,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   window.refreshFn = function () {
     initAdjust()
-
+    //addheimuTitle()
     if (GLOBAL_CONFIG_SITE.isPost) {
       GLOBAL_CONFIG.noticeOutdate !== undefined && addPostOutdateNotice()
       GLOBAL_CONFIG.relativeDate.post && relativeDate(document.querySelectorAll('#post-meta time'))
