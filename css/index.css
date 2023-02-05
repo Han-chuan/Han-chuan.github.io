@@ -1594,6 +1594,9 @@ a:active .heimur {
 .new:active .heimur {
   color: #ba0000 !important;
 }
+.change:hover {
+  filter: invert(100%);
+}
 :root {
   --hl-color: #90a4ae;
   --hl-bg: #f6f8fa;
